@@ -1,0 +1,245 @@
+:root {
+    --test-color: #ffc0cb;
+    --test-color2: #ff0000;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    font-size: 14px;
+}
+
+/* reset, do not touch */
+h1,h2,h3,h4,h5,h6,body,p {
+    margin: 0;
+}
+
+/* page settings */
+/* typo */
+@font-face {
+    font-family: "Neue-Machina";
+    src: url("../fonts/NeueMachina-Bold.otf");
+}
+
+body {
+    /* size */
+    width: 100vw;
+    height: 100vh;
+    /* font */
+    font-family: "Neue-Machina";
+    /* scroll */
+    overflow: hidden;
+}
+
+/* header settings */
+header {
+    /* size */
+    width: 100%;
+    height: 10%;
+    /* flex box */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* border */
+    border-bottom: 3px solid black;
+}
+
+#logo {
+    /* size */
+    width: auto;
+    height: 75%;
+    /* marge */
+    margin-left: 15px;
+}
+
+#burger {
+   /* size */
+   width: 25px;
+   height: 25px;
+   /* flex box */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   /* marge */
+   margin-right: 30px;
+}
+
+#burger span {
+    /* size */
+    width: 100%;
+    height: 2px;
+    /* background */
+    background-color: black;
+    /* border */
+    border-radius: 100px;
+}
+
+/* main settings */
+main {
+    /* size */
+    width: 100%;
+    height: 90%;
+    background-color: red;
+    /* flex box */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#first-block {
+    width: 22%;
+    height: 100%;
+    /* background */
+    background-color: white;
+}
+
+#first-block img {
+    /* size */
+    width: 100%;
+    height: 80%;
+    /* image */
+    object-fit: cover;
+    /* border */
+    border-bottom: 3px solid black;
+}
+
+#first-block div {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 2%;
+}
+
+#first-block div p {
+    margin-bottom: 5%;
+    font-size: 1.5rem;
+}
+
+#second-block {
+    width: 18%;
+    height: 100%;
+    /* flex box */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border */
+    border: 3px solid black;
+}
+
+#second-block img:first-child {
+    /* size */
+    width: 100%;
+    height: 35%;
+    /* border */
+    border-bottom: 3px solid black;
+    /* image */
+    object-fit: cover;
+}
+
+#second-block img:last-child {
+    /* size */
+    width: 100%;
+    height: 65%;
+    /* border */
+    border-bottom: 3px solid black;
+    /* image */
+    object-fit: cover;
+}
+
+#third-block {
+    width: 22%;
+    height: 100%;
+    /* flex box */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border */
+    border-right: 3px solid black;
+    /* background */
+    background-color: gray;
+}
+
+#third-block div:first-child {
+    /* size */
+    width: 100%;
+    height: 38%;
+    /* border */
+    border-bottom: 3px solid black;
+}
+
+#third-block div:nth-child(2) {
+    /* size */
+    width: 100%;
+    height: 10%;
+    /* border */
+    border-bottom: 3px solid black;
+    /* background */
+    background-color: white;
+}
+
+#third-block div:nth-child(2) h2 {
+    /* marge */
+    margin-left: 3%;
+}
+
+#third-block div:nth-child(2) p {
+    /* marge */
+    margin-left: 90%;
+}
+
+#third-block img {
+    /* size */
+    width: 100%;
+    height: 52%;
+    /* border */
+    border-bottom: 3px solid black;
+    /* image */
+    object-fit: cover;
+}
+
+#fourth-block {
+    width:16%;
+    height: 100%;
+    /* flex box */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border */
+    border-right: 3px solid black;
+    /* background */
+    background-color: gray;
+}
+
+#fifth-block {
+    width: 22%;
+    height: 100%;
+}
+
+#fifth-block div:first-child {
+    width: 100%;
+    height: 38%;
+    background-color: #5134FF;
+    /* border */
+    border-bottom: 3px solid black;
+}
+
+#fifth-block div:nth-child(2) {
+    width: 100%;
+    height: 10%;
+    background-color:white;
+    /* border */
+    border-bottom: 3px solid black;
+}
+
+#fifth-block div:last-child {
+    width: 100%;
+    height: 52%;
+    background-color: silver;
+}
