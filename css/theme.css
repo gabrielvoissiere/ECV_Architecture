@@ -1,0 +1,159 @@
+:root {
+    --test-color: #ffc0cb;
+    --test-color2: #ff0000;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    font-size: 14px;
+}
+
+/* reset, do not touch */
+h1,h2,h3,h4,h5,h6,body,p {
+    margin: 0;
+}
+
+/* page settings */
+/* typo */
+@font-face {
+    font-family: "Neue-Machina";
+    src: url("../fonts/NeueMachina-Bold.otf");
+}
+
+body {
+    /* size */
+    width: 100vw;
+    height: 100vh;
+    /* font */
+    font-family: "Neue-Machina";
+}
+
+/* header settings */
+header {
+    /* size */
+    width: 100%;
+    height: 10%;
+    /* flex box */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* border */
+    border-bottom: 3px solid black;
+}
+
+#logo {
+    /* size */
+    width: auto;
+    height: 75%;
+    /* marge */
+    margin-left: 15px;
+}
+
+#burger {
+   /* size */
+   width: 25px;
+   height: 25px;
+   /* flex box */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   /* marge */
+   margin-right: 30px;
+}
+
+#burger span {
+    /* size */
+    width: 100%;
+    height: 2px;
+    /* background */
+    background-color: black;
+    /* border */
+    border-radius: 100px;
+}
+
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+}
+
+.haut {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid black;
+    background-color: white;
+}
+
+.description, .origines {
+    width: 50%;
+    height: auto;
+}
+
+.description {
+    border-right: 2px solid black;
+}
+
+.description p, h2 {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.origines p, h2 {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 15px;
+}
+
+.bas {
+    margin-top: 50px;
+    width: 90%;
+    height: 80vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.card p {
+    margin-top: 15px;
+}
+
+footer {
+    width: 100%;
+    height: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid black;
+    background-color: gray;
+}
+
+footer img {
+    height: 4vw;
+    width: auto;;
+}
