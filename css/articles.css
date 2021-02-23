@@ -98,7 +98,7 @@ header {
 
 nav {
     position: absolute;
-    right: 8%;
+    right: 6.5%;
     transition: 700ms ease-in-out;
     transform: translateX(150%);
     opacity: 0;
@@ -127,7 +127,7 @@ nav a:hover {
 }
 
 .croix-l2 {
-    transform: translateX(-350px) rotate(450deg);
+    transform: translateX(-250px) rotate(450deg);
     /* opacity: 0; */
 }
 
@@ -135,97 +135,69 @@ nav a:hover {
     transform: rotate(-28deg);
 }
 
-
-main {
+main{
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: gray;
 }
 
 .haut {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    border-bottom: 2px solid black;
-    background-color: white;
-}
-
-.description, .origines {
-    width: 50%;
-    height: auto;
-}
-
-.description {
-    border-right: 2px solid black;
-}
-
-.description p, h2 {
-    margin-left: 50px;
-    margin-bottom: 20px;
-}
-
-.description p {
-    width: 70%;
-}
-
-.origines p, h2 {
-    margin-left: 50px;
-    margin-bottom: 20px;
-}
-
-.origines p {
-    width: 70%;
+    width: 35%;
+    border-bottom: 3px solid black;
+    margin-top: 35px;
 }
 
 h2 {
-    margin-top: 15px;
-}
-
-.bas {
-    margin-top: 50px;
-    width: 90%;
-    height: 80vw;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
 }
 
-.card:hover {
-    cursor: pointer;
-}
-
-.card img {
+.millieu {
     width: 80%;
-    height: 400px;
-    object-fit: contain;
-}
-
-.card p {
-    margin-top: 5px;
-}
-
-footer {
-    width: 100%;
-    height: 8vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     border: 2px solid black;
-    background-color: gray;
+    text-align: center;
+    padding: 10px 0px;
+    align-self: center;
+    margin-top: 35px;
+    text-transform: uppercase;
+}
+.bas {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    align-self: center;
+    margin: 50px 0px;
 }
 
-footer img {
-    height: 4vw;
-    width: auto;;
+.bas p {
+    width: 80%;
 }
+
+.bas img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bas .gauche {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bas .gauche .button {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+} 
+
+button {
+    width: 45%;
+    height: 30px;
+    border: 3px solid black;
+    background-color: white;
+    margin-top: 25px;
+}
+
+

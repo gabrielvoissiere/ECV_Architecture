@@ -16,12 +16,18 @@
         <!-- burger -->
         <div id="burger">
             <!-- ligne 1 -->
-            <span></span>
+            <span id="l1"></span>
             <!-- ligne 2 -->
-            <span></span>
+            <span id="l2"></span>
             <!-- ligne 3 -->
-            <span></span>
+            <span id="l3"></span>
         </div>
+
+        <nav id="nav">
+            <a href="../index.html">Acceuil</a>
+            <a href="moderniste.html">Moderniste</a>
+            <a href="luxe.html">Luxe</a>
+        </nav>
     </header>
 
     <main>
@@ -67,25 +73,25 @@
         </div>
 
         <div class="bas">
-            <div class="card">
+            <div class="card" onclick="document.location = 'articles/boston.html'">
                 <img src="../assets/Boston_City_Hall.jpg" alt="">
                 <p>
                     Hotel de Ville de Boston réalisé par Kallmann <br>
                     McKinnell & Knowles en 1969
                 </p>
             </div>
-            <div class="card">
+            <div class="card" onclick="document.location = 'articles/royal.html'">
                 <img src="../assets/300px-Royal_National_Theatre_London_SouthBankCentre02.jpg" alt="">
                 <p>Le Royal National Theatre de Londres (1977)</p>
             </div>
-            <div class="card">
+            <div class="card" onclick="document.location = 'articles/telephone.html'">
                 <img src="../assets/300px-Cluj-Napoca.jpeg" alt="">
                 <p>
                     Palais des Téléphones de Bucarest à <br>
                     Cluj-Napoca en Roumanie
                 </p>
             </div>
-            <div class="card">
+            <div class="card" onclick="document.location = 'articles/danse.html'">
                 <img src="../assets/220px-Centre_national_de_la_danse_6.jpg" alt="">
                 <p>
                     Une façade du Centre
@@ -127,6 +133,7 @@
         </div>
     </footer>
 
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

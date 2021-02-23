@@ -29,6 +29,7 @@ body {
     height: 100vh;
     /* font */
     font-family: "Neue-Machina";
+    overflow-x: hidden;
 }
 
 /* header settings */
@@ -43,6 +44,7 @@ header {
     justify-content: space-between;
     /* border */
     border-bottom: 3px solid black;
+    position: relative;
 }
 
 #logo {
@@ -74,6 +76,63 @@ header {
     background-color: black;
     /* border */
     border-radius: 100px;
+}
+
+#burger #l1 {
+    transition: 800ms ease-in-out;
+    transform-origin: center left;
+}
+
+#burger #l2 {
+    transition: 700ms ease-in-out;
+}
+
+#burger #l3 {
+    transition: 800ms ease-in-out;
+    transform-origin: center left;
+}
+
+#burger:hover {
+    cursor: pointer;
+}
+
+nav {
+    position: absolute;
+    right: 6.5%;
+    transition: 700ms ease-in-out;
+    transform: translateX(150%);
+    opacity: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0px 10px;
+    transition: 300ms ease-in-out;
+    border-bottom: 3px solid transparent;
+    
+}
+
+nav a:hover {
+    border-bottom: 3px solid black;
+}
+
+.slide {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.croix-l1 {
+    transform: rotate(28deg);
+}
+
+.croix-l2 {
+    transform: translateX(-350px) rotate(450deg);
+    /* opacity: 0; */
+}
+
+.croix-l3 {
+    transform: rotate(-28deg);
 }
 
 /* main settings */
