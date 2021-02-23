@@ -319,8 +319,12 @@ main {
     background-color:white;
 }
 
-#fifth-block .p1 h2 {
+h2 {
     text-align: center;
+}
+
+.titreb:hover {
+    cursor: pointer;
 }
 
 footer {
