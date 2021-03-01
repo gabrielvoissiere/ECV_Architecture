@@ -6,3 +6,5 @@ burger.addEventListener("click", function() {
     document.getElementById("l2").classList.toggle("croix-l2")
     document.getElementById("l3").classList.toggle("croix-l3")
 })
+
+document.getElementById("body").style.cursor = 'url("../assets/cursor.png")'
